@@ -15,7 +15,9 @@ export default class Color extends Component {
       colorArray.push(
         <div className={`color ${color}`} key={color}>
           <p>
-            {color}: {this.colors[color]}
+            {color}
+            <br />
+            {this.colors[color]}
           </p>
         </div>
       );

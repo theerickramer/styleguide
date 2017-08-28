@@ -4,6 +4,8 @@ $green: #9EF100;
 $yellow: #FFFF00;
 $blue: #00DFCF;
 $orange: #FF6F00;
+$white: #FFFFFF;
+$black: #000000;
 
 @mixin color($color) {
     background: $color;
@@ -11,8 +13,11 @@ $orange: #FF6F00;
 
 .color {
     display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
     height: 100px;
     width: 100px;
+    text-align: center;
 }
 
 .purple {
