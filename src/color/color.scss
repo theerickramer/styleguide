@@ -1,45 +1,55 @@
-$purple: #7901BB;
-$pink: #D80076;
-$green: #9EF100;
-$yellow: #FFFF00;
-$blue: #00DFCF;
-$orange: #FF6F00;
-$white: #FFFFFF;
+$purple: #7901bb;
+$pink: #d80076;
+$green: #9ef100;
+$yellow: #ffff00;
+$blue: #00dfcf;
+$orange: #ff6f00;
+$white: #ffffff;
 $black: #000000;
 
 @mixin color($color) {
-    background: $color;
+  background: $color;
 }
 
 .color {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100px;
-    width: 100px;
-    text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+
+  & p {
+    opacity: 0;
+  }
+
+  &:hover {
+    & p {
+      opacity: 1;
+    }
+  }
 }
 
 .purple {
-    @include color($purple);
+  @include color($purple);
 }
 
 .pink {
-    @include color($pink);
+  @include color($pink);
 }
 
 .green {
-    @include color($green);
+  @include color($green);
 }
 
 .yellow {
-    @include color($yellow);
+  @include color($yellow);
 }
 
 .blue {
-    @include color($blue);
+  @include color($blue);
 }
 
 .orange {
-    @include color($orange);
+  @include color($orange);
 }
