@@ -1,14 +1,11 @@
-$purple: #7901bb;
-$pink: #d80076;
-$green: #9ef100;
-$yellow: #ffff00;
-$blue: #00dfcf;
-$orange: #ff6f00;
-$white: #ffffff;
-$black: #000000;
-
 @mixin color($color) {
   background: $color;
+}
+
+@each $color, $hex in $colors {
+  .#{$color} {
+    @include color($hex);
+  }
 }
 
 .color {
@@ -29,28 +26,4 @@ $black: #000000;
       opacity: 1;
     }
   }
-}
-
-.purple {
-  @include color($purple);
-}
-
-.pink {
-  @include color($pink);
-}
-
-.green {
-  @include color($green);
-}
-
-.yellow {
-  @include color($yellow);
-}
-
-.blue {
-  @include color($blue);
-}
-
-.orange {
-  @include color($orange);
 }
