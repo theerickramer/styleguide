@@ -13,7 +13,7 @@ class App extends Component {
           </ul>
         </nav>
         <main>
-          <Color/>
+          <Color />
         </main>
       </div>
     );
