@@ -2,6 +2,27 @@
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 20px;
   font-family: sans-serif;
+}
+
+#root {
+  width: 100%;
+}
+
+main, nav {
+  display: inline-flex;
+}
+
+main {
+}
+
+nav {
+  padding: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
