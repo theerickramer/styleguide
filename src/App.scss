@@ -1,1 +1,22 @@
+.App {    
+    &__body {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
 
+main,
+nav {
+  display: inline-flex;
+  padding: 20px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 10px;
+}
