@@ -9,20 +9,21 @@ export default class Color extends Component {
     blue: '#00DFCF',
     orange: '#FF6F00'
   };
-  render() {
-    const colorArray = Object.keys(this.colors).map((color, index) =>
-      <div className={`color ${color}`} key={index}>
-        <p>
-          {color}
-          <br />
-          {this.colors[color]}
-        </p>
-      </div>
-    );
 
+  colorArray = Object.keys(this.colors).map((color, index) =>
+    <div className={`color ${color}`} key={index}>
+      <p>
+        {color}
+        <br />
+        {this.colors[color]}
+      </p>
+    </div>
+  );
+
+  render() {
     return (
       <div>
-        {colorArray}
+        {this.colorArray}
       </div>
     );
   }
